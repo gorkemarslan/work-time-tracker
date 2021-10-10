@@ -16,7 +16,7 @@ class Employee(models.Model):
     """
     A model class to represent `Employee` schema
     """
-    employee_id = models.PositiveSmallIntegerField(primary_key=True)
+    employee_id = models.AutoField(primary_key=True)
     email = models.EmailField(_('email address'), unique=True)
     first_name = models.CharField(_('first name'), max_length=150)
     last_name = models.CharField(_('last name'), max_length=150)
