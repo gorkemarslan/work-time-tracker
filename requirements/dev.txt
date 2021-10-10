@@ -1,0 +1,7 @@
+# Includes all dependencies in `base.txt`
+-r base.txt
+
+# Dependencies only used in dev env
+coverage==6.0.1
+flake8==3.9.2
+black==21.9b0

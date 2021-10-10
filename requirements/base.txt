@@ -1,3 +1,4 @@
+# Common dependencies used for all environments
 Django==3.2.7
 djangorestframework==3.12.4
 django-environ==0.7.0
