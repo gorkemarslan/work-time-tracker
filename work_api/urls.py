@@ -1,13 +1,13 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from users.views import EmployeeViewSet, RoleViewSet
+from work_api.views import LabelViewSet, WorkViewSet
 
 # Create a router and register our viewsets with it.
-user_router = DefaultRouter()
-user_router.register(r'employees', EmployeeViewSet)
-user_router.register(r'roles', RoleViewSet)
+work_router = DefaultRouter()
+work_router.register(r'works', WorkViewSet)
+work_router.register(r'labels', LabelViewSet)
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [
-    path('', include(user_router.urls)),
+    path('', include(work_router.urls)),
 ]
